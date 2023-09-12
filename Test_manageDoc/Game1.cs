@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace Test_manageDoc
 {
@@ -26,7 +27,7 @@ namespace Test_manageDoc
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+           
             // TODO: use this.Content to load your game content here
         }
 
@@ -34,7 +35,7 @@ namespace Test_manageDoc
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
+            Console.WriteLine("Kuy Rai Sus");
             // TODO: Add your update logic here
 
             base.Update(gameTime);
