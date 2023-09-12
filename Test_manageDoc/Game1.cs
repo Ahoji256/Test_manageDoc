@@ -9,6 +9,8 @@ namespace Test_manageDoc
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        public int jiji = 56;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
